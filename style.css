@@ -1,0 +1,44 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+    direction: rtl;
+    background: #101827;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: #172554;
+    padding: 30px;
+}
+
+h1 {
+    color: #38bdf8;
+}
+
+main {
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 600px;
+    background: #1e293b;
+    border-radius: 15px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+button {
+    background: #0284c7;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
