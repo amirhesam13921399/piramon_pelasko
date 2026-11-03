@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="خرید انواع رگال لباس، قفسه فروشگاهی و استند از راکلند">
+    <title>پیرامون | فروشگاه پلاسکو و بلور</title>
+
+    <link rel="stylesheet" href="rackland.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <script src="rackland.js" defer></script>
+</head>
+<body>
+
+
+<header class="header">
+    <div class="container header-inner">
+
+        <a href="#home" class="logo">
+            <img src="rackland.jpg" class="img" >
+            <div>
+                <strong>piramon<span>پلاسکو</span></strong>
+                <small>پلاسکو و بلور و لوازم آشپزخانه</small>
+            </div>
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="#home" class="active">خانه</a>
+            <a href="#categories">دسته‌بندی‌ها</a>
+            <a href="#products">محصولات</a>
+            <a href="#about">درباره ما</a>
+            <a href="#contact">تماس با ما</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="icon-button" id="searchToggle"
+                    aria-label="جستجو">
+                <i clas+*s="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="cart-button" id="cartButton">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span>سبد خرید</span>
+                <b id="cartCount">۰</b>
+            </button>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="منو">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="search-bar container" id="searchBar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="searchInput" type="search"
+               placeholder="نام لیوان , پلاسکو">
+        <button id="clearSearch" aria-label="پاک کردن جستجو">×</button>
+    </div>
+</header>
+
+<main id="home">
+
+
+    <section class="hero container">
+        <div class="slides">
+
+            <article class="slide active">
+                <img
+                  src="">
+                <div class="slide-overlay"></div>
+
+                <div class="slide-content">
+                    <span class="eyebrow">pelasko</span>
+                    <h1></h1><br></h1>
+                    <p>لیوان جای حبوبات  و نظم دهنده ها برای چیدمان بهتر اشپزخانه</p>
+                    <a href="#products" class="primary-btn">
+                        مشاهده محصولات
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="slide">
+                <img
+                  src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1800&q=85"
+                  alt="فضای داخلی فروشگاه">
+
+                <div class="slide-overlay"></div>
+
+                <div class="slide-content">
+                    <span class="eyebrow">SMART DISPLAY</span>
+                    <h1>نظم بیشتر،<br>نمایش بهتر محصولات</h1>
+                    <p>از فضای فروشگاهت بهترین استفاده را ببر.</p>
+                    <a href="#categories" class="primary-btn">
+                        انتخاب دسته‌بندی
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="slide">
+                <img
+                  src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1800&q=85"
+                  alt="چیدمان محصولات در فروشگاه">
+
+                <div class="slide-overlay"></div>
+
+                <div class="slide-content">
+                    <span class="eyebrow">RACKLAND STORE</span>
+                    <h1>انتخابی هوشمندانه<br>برای کسب‌وکار شما</h1>
+                    <p>تجهیزات کاربردی برای فروشگاه‌های مدرن.</p>
+                    <a href="#products" class="primary-btn">
+                        خرید محصولات
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+        <button class="slider-arrow prev" id="prevSlide"
+                aria-label="اسلاید قبلی">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <button class="slider-arrow next" id="nextSlide"
+                aria-label="اسلاید بعدی">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="slider-dots" id="sliderDots"></div>
+
+        <div class="slider-counter" id="sliderCounter">01 / 03</div>
+    </section>
+
+    <!-- FEATURES STRIP -->
+    <section class="container features-strip">
+        <div class="feature">
+            <i class="fa-solid fa-box-open"></i>
+            <div>
+                <strong>تنوع محصولات</strong>
+                <small>انواع تجهیزات فروشگاهی</small>
+            </div>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-medal"></i>
+            <div>
+                <strong>انتخاب کاربردی</strong>
+                <small>مناسب چیدمان فروشگاه</small>
+            </div>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-headset"></i>
+            <div>
+                <strong>پشتیبانی خرید</strong>
+                <small>راهنمای انتخاب محصول</small>
+            </div>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>
+                <strong>ارسال سفارش</strong>
+                <small>طبق شرایط فروشگاه</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="container section" id="categories">
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">انتخاب آسان</span>
+                <h2>دسته‌بندی محصولات</h2>
+                <p>محصول موردنظرت را سریع‌تر پیدا کن.</p>
+            </div>
+        </div>
+
+        <div class="category-grid">
+
+            <button class="category-card" data-category="رگال لباس">
+                <div class="category-image">
+                    <img
+                      src="2.png"
+                      >
+                </div>
+                <div class="category-info">
+                    <h3>رگال لباس</h3>
+                    <span>مشاهده محصولات <i class="fa-solid fa-arrow-left"></i></span>
+                </div>
+            </button>
+
+            <button class="category-card" data-category="قفسه فروشگاهی">
+                <div class="category-image">
+                    <img
+                      src="1.png"
+                      alt="قفسه فروشگاهی">
+                </div>
+                <div class="category-info">
+                    <h3>قفسه فروشگاهی</h3>
+                    <span>مشاهده محصولات <i class="fa-solid fa-arrow-left"></i></span>
+                </div>
+            </button>
+
+            <button class="category-card" data-category="استند">
+                <div class="category-image">
+                    <img
+                      src="7.png"
+                      alt="استند">
+                </div>
+                <div class="category-info">
+                    <h3>استند</h3>
+                    <span>مشاهده محصولات <i class="fa-solid fa-arrow-left"></i></span>
+                </div>
+            </button>
+
+            <button class="category-card" data-category="تجهیزات فروشگاهی">
+                <div class="category-image">
+                    <img
+                      src="https://placehold.co/600x400/222222/D6AD60?text=Store+Equipment"
+                      alt="تجهیزات فروشگاهی">
+                </div>
+                <div class="category-info">
+                    <h3>تجهیزات فروشگاهی</h3>
+                    <span>مشاهده محصولات <i class="fa-solid fa-arrow-left"></i></span>
+                </div>
+            </button>
+
+        </div>
+    </section>
+
+    <!-- PROMOTION BANNER -->
+    <section class="container promo-banner">
+        <div>
+            <span class="eyebrow">RACKLAND FOR BUSINESS</span>
+            <h2>یک چیدمان حرفه‌ای،<br>شروع یک تجربه متفاوت</h2>
+            <p>تجهیزات متناسب با فضای فروشگاهت را انتخاب کن.</p>
+            <a href="#products" class="primary-btn">
+                دیدن محصولات
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+
+        <div class="promo-icon">
+            <i class="fa-solid fa-store"></i>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="container section" id="products">
+        <div class="section-heading product-heading">
+            <div>
+                <span class="eyebrow">ویترین راکلند</span>
+                <h2 id="productsTitle">محصولات فروشگاه</h2>
+                <p id="resultMessage">محصول مناسب فروشگاهت را پیدا کن.</p>
+            </div>
+
+            <div class="product-filters">
+                <select id="sortSelect" aria-label="مرتب‌سازی محصولات">
+                    <option value="default">مرتب‌سازی پیش‌فرض</option>
+                    <option value="cheap">ارزان‌ترین</option>
+                    <option value="expensive">گران‌ترین</option>
+                    <option value="newest">جدیدترین</option>
+                </select>
+
+                <button id="showAll" class="outline-btn">همه محصولات</button>
+            </div>
+        </div>
+
+        <div class="product-grid" id="productList"></div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why-section">
+        <div class="container section">
+            <div class="section-heading center">
+                <span class="eyebrow">WHY RACKLAND</span>
+                <h2>چرا راکلند؟</h2>
+                <p>تجهیزات مناسب، چیدمان بهتر و انتخاب آسان‌تر.</p>
+            </div>
+
+            <div class="why-grid">
+                <article class="why-card">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <h3>تنوع در انتخاب</h3>
+                    <p>محصولات متناسب با نیاز و فضای فروشگاهت انتخاب کن.</p>
+                </article>
+
+                <article class="why-card">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h3>جستجوی آسان</h3>
+                    <p>محصولات را با نام و دسته‌بندی سریع‌تر پیدا کن.</p>
+                </article>
+
+                <article class="why-card">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h3>سبد خرید ساده</h3>
+                    <p>کالاها را اضافه کن و مبلغ سفارش را ببین.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="container about-section" id="about">
+        <div class="about-mark">R</div>
+
+        <div class="about-content">
+            <span class="eyebrow">درباره راکلند</span>
+            <h2>همراه شما در چیدمان حرفه‌ای فروشگاه</h2>
+            <p>
+                راکلند با هدف فراهم کردن تجهیزات کاربردی فروشگاهی،
+                فضایی برای انتخاب انواع رگال، قفسه و استند ایجاد می‌کند.
+                هدف ما کمک به انتخاب بهتر و چیدمان منظم‌تر فروشگاه شماست.
+            </p>
+            <a href="#contact" class="outline-btn">ارتباط با ما</a>
+        </div>
+    </section>
+
+    <section class="container contact-banner" id="contact">
+        <div>
+            <span class="eyebrow">با راکلند در ارتباط باش</span>
+            <h2>برای انتخاب محصول مناسب راهنمایی می‌خواهی؟</h2>
+            <p>راه ارتباطی فروشگاه را در این قسمت قرار بده.</p>
+        </div>
+        <a href="mailto:info@example.com" class="primary-btn">
+            <i class="fa-regular fa-envelope"></i>
+            تماس با ما
+        </a>
+    </section>
+
+</main>
+
+<div class="modal-overlay" id="cartModal">
+    <section class="cart-modal">
+        <button class="close-btn" id="closeCart" aria-label="بستن">×</button>
+
+        <h2><i class="fa-solid fa-basket-shopping"></i> سبد خرید</h2>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+            <span>مبلغ کل</span>
+            <strong id="cartTotal">۰ تومان</strong>
+        </div>
+
+        <button id="checkoutBtn" class="primary-btn full-btn">
+            ادامه سفارش
+        </button>
+
+        <p class="hint">
+            ثبت سفارش نهایی نیازمند اتصال به سامانه سفارش‌گیری است.
+        </p>
+    </section>
+</div>
+
+ 
+<footer class="footer">
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+            <a href="#home" class="logo">
+                <span class="logo-icon">R</span>
+                <div>
+                    <strong>RACK<span>LAND</span></strong>
+                    <small>رگال و قفسه و استند</small>
+                </div>
+            </a>
+            <p>انتخابی کاربردی برای چیدمان حرفه‌ای فروشگاه شما.</p>
+        </div>
+
+        <div>
+            <h3>دسترسی سریع</h3>
+            <a href="#home">صفحه اصلی</a>
+            <a href="#categories">دسته‌بندی‌ها</a>
+            <a href="#products">محصولات</a>
+        </div>
+
+        <div>
+            <h3>راهنمای مشتریان</h3>
+            <a href="#about">درباره ما</a>
+            <a href="#contact">تماس با ما</a>
+            <a href="#products">محصولات فروشگاه</a>
+        </div>
+
+        <div>
+            <h3>ارتباط با راکلند</h3>
+            <p>شماره تماس و شبکه‌های اجتماعی خودت را اینجا قرار بده.</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© راکلند — تمامی حقوق محفوظ است.</p>
+    </div>
+</footer>
+
+</body>
+</html>
